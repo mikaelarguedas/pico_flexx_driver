@@ -57,7 +57,7 @@ def findSDKs(path):
                 continue
 
             sdks.append(SDK(os.path.join(path, directory, "share"), version))
-        except:
+        except Exception:
             continue
     sdks.sort()
     sdks.reverse()
