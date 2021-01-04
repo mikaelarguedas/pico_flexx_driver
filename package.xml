@@ -17,16 +17,11 @@
 
   <build_depend>python3-interpreter</build_depend>  <!-- for cmake/findPicoFlexxSDK.py -->
 
-  <depend>nodelet</depend>
-  <depend>roscpp</depend>
-  <depend>rostime</depend>
-  <depend>sensor_msgs</depend>
-  <depend>std_msgs</depend>
-  <depend>dynamic_reconfigure</depend>
-
   <build_depend>libusb-1.0-dev</build_depend>
   <build_export_depend>libusb-1.0-dev</build_export_depend>
   <exec_depend>libusb-1.0</exec_depend>
+  <exec_depend>nodelet</exec_depend>
+  <exec_depend>tf</exec_depend>
 
   <export>
     <nodelet plugin="${prefix}/nodelet_plugins.xml" />
